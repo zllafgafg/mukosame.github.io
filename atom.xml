@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zllafgafg.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-12-26T10:54:43.981Z</updated>
+    <title>Alain的博客</title>
+    <updated>2020-12-26T11:10:36.694Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zllafgafg.github.io"/>
     <link rel="self" href="https://zllafgafg.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>刻在你心底的名字</subtitle>
     <logo>https://zllafgafg.github.io/images/avatar.png</logo>
     <icon>https://zllafgafg.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Alain的博客</rights>
 </feed>
