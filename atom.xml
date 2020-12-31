@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zllafgafg.github.io</id>
-    <title>Alain的博客</title>
-    <updated>2020-12-29T14:29:41.104Z</updated>
+    <title>Alain的个人博客</title>
+    <updated>2020-12-31T06:56:35.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zllafgafg.github.io"/>
     <link rel="self" href="https://zllafgafg.github.io/atom.xml"/>
-    <subtitle>刻在你心底的名字</subtitle>
+    <subtitle>欢迎</subtitle>
     <logo>https://zllafgafg.github.io/images/avatar.png</logo>
     <icon>https://zllafgafg.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Alain的博客</rights>
+    <rights>All rights reserved 2020, Alain的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[看电影有感]]></title>
         <id>https://zllafgafg.github.io/post/kan-dian-ying-you-gan/</id>
