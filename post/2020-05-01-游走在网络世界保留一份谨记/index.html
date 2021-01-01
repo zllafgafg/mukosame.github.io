@@ -1,266 +1,140 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <head>
+    <meta charset="utf-8" >
+
 <title>游走在网络世界，保留一份谨记。 | Alain的个人博客</title>
-<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609399924375">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css" type='text/css' media='all'>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609506207078">
+<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css">
 
 
 
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/">love</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/">cartier</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/">tiktok</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/">书籍</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://zllafgafg.github.io">  Alain的个人博客 </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">欢迎</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
-</header>
 
+    <meta name="description" content="在使用网络代理后，你会发现可以浏览很多的网站。这里面有的一些对工作、学习和生活会有帮助和促进作用；有的一些，或者说是很多，它会是一些负面的东西，比如虚假的、左右人思维观念的“颜色洗劫”式的新闻，甚至是非常之多的不健康的东西。用了网络代理工具..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
 
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
-        
-
-        <div class="entry-meta">
-          <span class="date">· 2020-05-01 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://zllafgafg.github.io" title="" rel="author"> </a>
-          </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>游走在网络世界，保留一份谨记。</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
-              <p>在使用网络代理后，你会发现可以浏览很多的网站。这里面有的一些对工作、学习和生活会有帮助和促进作用；有的一些，或者说是很多，它会是一些负面的东西，比如虚假的、左右人思维观念的“颜色洗劫”式的新闻，甚至是非常之多的不健康的东西。用了网络代理工具，在带来些许方便的同时，也要注意和警惕与之伴随而来的负面影响。一定要管理好自己，浏览正确的信息，不要任意看、到处看，更不要没有节制的、没有底线的看。 每一次做错误的事情过后才知道自己做错了，在之后才会知道后悔和忏悔。其实重要的是做之前怎么采取行动努力约束自己，尽量或尽努力不去做它，不要让这件不好的事发生和成为现实。 人的内心可以有很多的幽暗面，也可以是很多阳光面，最为重要的是看你自己怎么去约束和引导自己。 在这样一个时候写下这些文字则更是想提醒和警醒自己，把握事情好的一面，努力化解消解不好的一面。 在这样一段话中，使用的语言较为委婉和便于理解。希望一切都如此，不要等到追悔莫及时才明白这些事情的答案、才明白到底该怎么做。谨记。</p>
-
-            </article>
-          </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-                    
-                  <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/" title="View all posts in love">love</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/" title="View all posts in cartier">cartier</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/" title="View all posts in tiktok">tiktok</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/" title="View all posts in 书籍">书籍</a>
-                    
-                    
-              </p>
-            </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://zllafgafg.github.io/images/avatar.png?v=1609399924375" class='avatar avatar-72 photo' height='72' width='72'>
-              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://zllafgafg.github.io'></a> </span>
-            </div>
-            <div class="bio">
-              <p></p>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
-        </div>
-          
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <a class="next page-numbers" href="https://zllafgafg.github.io/post/2020-04-26-我们的暮光之城/">下一篇->我们的暮光之城</a>
-              </div>
-            </nav>
-          
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zllafgafg.github.io">
+        <img src="https://zllafgafg.github.io/images/avatar.png?v=1609506207078" class="site-logo">
+        <h1 class="site-title">Alain的个人博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
-      <section id="comments" class="comments">
+    </div>
+    <div>
+      
         
-      </section>
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://zllafgafg.github.io"> Alain的个人博客 </a>
-    </h1>
-    <p class="site-description">欢迎</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
-        </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p></p>
+    <div class="site-description">
+      欢迎
     </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/production.min.js"></script>
-
+    <div class="site-footer">
+       | <a class="rss" href="https://zllafgafg.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
-</body>
-</html>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">游走在网络世界，保留一份谨记。</h2>
+            <div class="post-date">2020-05-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>在使用网络代理后，你会发现可以浏览很多的网站。这里面有的一些对工作、学习和生活会有帮助和促进作用；有的一些，或者说是很多，它会是一些负面的东西，比如虚假的、左右人思维观念的“颜色洗劫”式的新闻，甚至是非常之多的不健康的东西。用了网络代理工具，在带来些许方便的同时，也要注意和警惕与之伴随而来的负面影响。一定要管理好自己，浏览正确的信息，不要任意看、到处看，更不要没有节制的、没有底线的看。 每一次做错误的事情过后才知道自己做错了，在之后才会知道后悔和忏悔。其实重要的是做之前怎么采取行动努力约束自己，尽量或尽努力不去做它，不要让这件不好的事发生和成为现实。 人的内心可以有很多的幽暗面，也可以是很多阳光面，最为重要的是看你自己怎么去约束和引导自己。 在这样一个时候写下这些文字则更是想提醒和警醒自己，把握事情好的一面，努力化解消解不好的一面。 在这样一段话中，使用的语言较为委婉和便于理解。希望一切都如此，不要等到追悔莫及时才明白这些事情的答案、才明白到底该怎么做。谨记。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zllafgafg.github.io/post/2020-04-26-我们的暮光之城/">
+                  <h3 class="post-title">
+                    我们的暮光之城
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

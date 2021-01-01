@@ -1,150 +1,100 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <head>
+    <meta charset="utf-8" >
+
 <title>个人观点的批《小娘惹》 | Alain的个人博客</title>
-<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609399924375">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css" type='text/css' media='all'>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609506207078">
+<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css">
 
 
 
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/">love</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/">cartier</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/">tiktok</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/">书籍</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="最近在看中央八台的电视剧《小娘惹》，一开始觉得很好看、很吸引人，到现在感到已经变得像某南台偶像剧一样令人反感。
+里面编剧把人心险恶编写的无所不用其极。剧中很少出现的人性美好真的是好似看不见的微光，恐怕也只能照亮编剧和按剧本表演的演员的心。其..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zllafgafg.github.io">
+        <img src="https://zllafgafg.github.io/images/avatar.png?v=1609506207078" class="site-logo">
+        <h1 class="site-title">Alain的个人博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://zllafgafg.github.io">  Alain的个人博客 </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">欢迎</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-
-
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+    <div>
+      
         
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      欢迎
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://zllafgafg.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-        <div class="entry-meta">
-          <span class="date">· 2020-07-29 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://zllafgafg.github.io" title="" rel="author"> </a>
-          </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>个人观点的批《小娘惹》</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">个人观点的批《小娘惹》</h2>
+            <div class="post-date">2020-07-29</div>
+            
+            <div class="post-content" v-pre>
               <p>最近在看中央八台的电视剧《小娘惹》，一开始觉得很好看、很吸引人，到现在感到已经变得像某南台偶像剧一样令人反感。<br>
 里面编剧把人心险恶编写的无所不用其极。剧中很少出现的人性美好真的是好似看不见的微光，恐怕也只能照亮编剧和按剧本表演的演员的心。其实学习心计，看《甄嬛传》不就行了吗？为什么非要从这部剧来向人呈现呢？中央八台好不容易脱离了前几年“全盘韩剧”路线，现在又开始走这样的路线博收视率，真是叫人有话可说，却无可期待。<br>
 难道这一部电视剧很符合社会主义核心价值观吗？我看一点也不。我不禁要反问：为什么中国的广电部门容得下这部剧，却始终容不下同性恋呢？这可真叫人笑话。《人民日报》曾经批评电视剧《安家》，那现如今怎么不来批一批此剧呢？<br>
@@ -153,120 +103,45 @@
 可以说《小娘惹》这部电视剧比那些有直接描写叙述变态者作恶故事情节的影视剧更为可怕。这确实是使我无法再看下去，自私的选择就是暂时先删除中央电视台电视剧频道。<br>
 最后我们使用对英剧《皇家律师》里主人公玛莎的化身写照来结束本文——我喜欢女强人，我爱女强人，我要成为女强人，我就是女强人。</p>
 
-            </article>
-          </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-                    
-                  <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/" title="View all posts in love">love</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/" title="View all posts in cartier">cartier</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/" title="View all posts in tiktok">tiktok</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/" title="View all posts in 书籍">书籍</a>
-                    
-                    
-              </p>
             </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://zllafgafg.github.io/images/avatar.png?v=1609399924375" class='avatar avatar-72 photo' height='72' width='72'>
-              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://zllafgafg.github.io'></a> </span>
-            </div>
-            <div class="bio">
-              <p></p>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
-        </div>
-          
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <a class="next page-numbers" href="https://zllafgafg.github.io/post/2020-07-29-看海吉拉听想见你想见你想见你/">下一篇->看《海吉拉》，听《想见你想见你想见你》</a>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zllafgafg.github.io/post/2020-07-29-看海吉拉听想见你想见你想见你/">
+                  <h3 class="post-title">
+                    看《海吉拉》，听《想见你想见你想见你》
+                  </h3>
+                </a>
               </div>
-            </nav>
-          
-      </div>
-      <section id="comments" class="comments">
-        
-      </section>
-    </div>
-  </div>
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://zllafgafg.github.io"> Alain的个人博客 </a>
-    </h1>
-    <p class="site-description">欢迎</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
+            
+
+            
+
+          </div>
+
         </div>
+      </div>
     </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p></p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/production.min.js"></script>
 
-</div>
-</body>
+
+
+
+
+
+  </body>
 </html>
-

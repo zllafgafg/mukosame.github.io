@@ -1,703 +1,632 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
-<title>Alain的个人博客</title>
-<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609399924375">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css" type='text/css' media='all'>
+  <head>
+    <meta charset="utf-8" >
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<title>文章归档 | Alain的个人博客</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609506207078">
+<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css">
 
 
 
-</head>
-    <body class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
-        <div id="overflow-container" class="overflow-container">
-            <a class="skip-content" href="#main">Skip to content</a>
-                <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/">love</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/">cartier</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/">tiktok</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/">书籍</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="欢迎">
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zllafgafg.github.io">
+        <img src="https://zllafgafg.github.io/images/avatar.png?v=1609506207078" class="site-logo">
+        <h1 class="site-title">Alain的个人博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://zllafgafg.github.io">  Alain的个人博客 </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">欢迎</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
-
-
-</header>
-
-
-                
-
-<div class="main">
-    <div class="main-content">
-        <div id="timeline-container">
-            <div id="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-    <!--                    <img src="assets/images/star.svg" alt="2020">-->
-                        <span>2020</span>
-                    </div>
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 看电影有感</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/kan-dian-ying-you-gan/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 谁的泪，谁独自彷徨——看电影《欲望号街车》有感</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-12-04-谁的泪，谁独自彷徨-看电影《欲望号街车》有/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 关注新闻当中的“人”</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-11-26-关注新闻当中的人/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 爱·love</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-08-21-爱-love/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 卡地亚的广告、央视批林夕</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-08-13-卡地亚的广告央视批林夕/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 武汉，恢复生机</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-08-09-这张图片应该是中国武汉武汉大学的樱花经历过疫/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 失败尝试后，继续在这里</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-08-07-失败尝试后继续在这里/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 20·8·5新的记录</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-08-05-2085新的记录/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 20.7.30一份记录</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-30-20730一份记录/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> [最新的文章]——哭泣</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-最新的文章哭泣/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 20·6·30的一些杂记</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-20630的一些杂记/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 20·7·2今日记录</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-2072今日记录/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 生命中的追寻·今日小记</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-生命中的追寻今日小记/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 今日的一份书写</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-今日的一份书写/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 个人观点的批《小娘惹》</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-个人观点的批小娘惹/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 看《海吉拉》，听《想见你想见你想见你》</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-29-看海吉拉听想见你想见你想见你/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> cctv的柴静记者</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-07-18-虽然图片和字幕不太清晰了但是仍然让人感动怀念/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 再回首·夏日的气味</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-05-18-再回首夏日的气味/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 游走在网络世界，保留一份谨记。</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-05-01-游走在网络世界保留一份谨记/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 我们的暮光之城</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-04-26-我们的暮光之城/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 对自己的警醒</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-04-26-对自己的警醒/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 夜深了·短杂谈</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-04-18-夜深了·短杂谈/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 我们的灵魂是爱做的吗？</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-04-13-我们的灵魂是爱做的吗？/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 对新闻媒体的探讨</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-04-03-对新闻媒体的探讨/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> “乌龙茶”与追寻爱人的思考</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-29-乌龙茶与追寻爱人的思考/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 回归博客与展望·祝愿与坚信</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-28-回归博客与展望·祝愿与坚信/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 杂谈·展望与期望</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-13-杂谈·展望与期望/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 书籍的讨论与感触</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-09-书籍的讨论与感触/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 因为肺炎疫情的发生，一些国家出现歧视华裔亚裔的现象；小结</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-06-因为肺炎疫情的发生，一些国家出现歧视华裔亚裔/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 综合改正·不使用个别网站</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-02-综合改正·不使用个别网站/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 愤怒·读《Ao3被墙是内化的恐同症幽灵在作怪！》有感</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-03-02-愤怒·读《ao3被墙是内化的恐同症幽灵在作怪！》有/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 在新的月份来临前·短谈</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-29-在新的月份来临前·短谈/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 春天带来好转，也并存着失望与落寞</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-27-春天带来好转，也并存着失望与落寞/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 新的故事</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-17-新的故事/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 失望的等待</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-12-失望的等待/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 希望的光芒、看《楼上楼下》</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-09-希望的光芒、看《楼上楼下》/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 失望中的希望·小结</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-失望中的希望·今日小结-2/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 失望中的希望·今日小结</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-失望中的希望·今日小结/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 回归与未来展望</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-回归与未来展望/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 关于丹麦《日德兰邮报》辱华</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-关于丹麦《日德兰邮报》辱华/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 天空之下·愿中国安好</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-天空之下·愿中国安好/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 疫情、电影及自我激励</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-疫情、电影及自我激励/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> ［2020.11］关于圣诞美妆日历的个人杂谈</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-关于圣诞美妆日历的个人杂谈/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> [20.1.27]心情不好的一段时间</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-02-03-20-1-27心情不好的一段时间/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 新年除夕的阴天·杂谈</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-24-新年除夕的阴天·杂谈/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 杂谈·《星际迷航》、香水及新型冠状病毒疫情</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-21-杂谈·《星际迷航》、香水及新型冠状病毒疫情/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 看电影前的一篇杂谈·“P”同志、“新春走基层”</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-19-看电影前的一篇杂谈·p同志、新春走基层/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 杂谈·20.1.16</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-16-杂谈·20-1-16/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 杂谈·20.1.15</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-15-杂谈·20-1-15/" class="btn">review</a>
-                        </div>
-                    
-                    
-                    
-                        <div class="timeline-content">
-                            <h3 class="timeline-title"> 2020年的春节到来之际·新春碎碎念</h3>
-                            <p>
-                                
-                            </p>
-                            <a href="https://zllafgafg.github.io/post/2020-01-14-2020年的春节到来之际·新春碎碎念/" class="btn">review</a>
-                        </div>
-                    
-                    
-                </div>
-                 
-            </div>
-        </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     </div>
+    <div class="site-description">
+      欢迎
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://zllafgafg.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-                <nav class="navigation pagination" role="navigation">
-    <h2 class="screen-reader-text">Posts navigation</h2>
-    <div class="nav-links">
-        
-        
-             <a class="next page-numbers" href="https://zllafgafg.github.io/archives/page/2">下一页</a>
-        
-    </div>
-</nav>
 
-                <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://zllafgafg.github.io"> Alain的个人博客 </a>
-    </h1>
-    <p class="site-description">欢迎</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/kan-dian-ying-you-gan/">
+                      <h2 class="post-title">
+                        看电影有感
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-12-04-谁的泪，谁独自彷徨-看电影《欲望号街车》有/">
+                      <h2 class="post-title">
+                        谁的泪，谁独自彷徨——看电影《欲望号街车》有感
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-11-26-关注新闻当中的人/">
+                      <h2 class="post-title">
+                        关注新闻当中的“人”
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-08-21-爱-love/">
+                      <h2 class="post-title">
+                        爱·love
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-08-13-卡地亚的广告央视批林夕/">
+                      <h2 class="post-title">
+                        卡地亚的广告、央视批林夕
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-08-09-这张图片应该是中国武汉武汉大学的樱花经历过疫/">
+                      <h2 class="post-title">
+                        武汉，恢复生机
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-08-07-失败尝试后继续在这里/">
+                      <h2 class="post-title">
+                        失败尝试后，继续在这里
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-08-05-2085新的记录/">
+                      <h2 class="post-title">
+                        20·8·5新的记录
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-30-20730一份记录/">
+                      <h2 class="post-title">
+                        20.7.30一份记录
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-最新的文章哭泣/">
+                      <h2 class="post-title">
+                        [最新的文章]——哭泣
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-20630的一些杂记/">
+                      <h2 class="post-title">
+                        20·6·30的一些杂记
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-2072今日记录/">
+                      <h2 class="post-title">
+                        20·7·2今日记录
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-生命中的追寻今日小记/">
+                      <h2 class="post-title">
+                        生命中的追寻·今日小记
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-今日的一份书写/">
+                      <h2 class="post-title">
+                        今日的一份书写
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-个人观点的批小娘惹/">
+                      <h2 class="post-title">
+                        个人观点的批《小娘惹》
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-29-看海吉拉听想见你想见你想见你/">
+                      <h2 class="post-title">
+                        看《海吉拉》，听《想见你想见你想见你》
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-07-18-虽然图片和字幕不太清晰了但是仍然让人感动怀念/">
+                      <h2 class="post-title">
+                        cctv的柴静记者
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-05-18-再回首夏日的气味/">
+                      <h2 class="post-title">
+                        再回首·夏日的气味
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-05-01-游走在网络世界保留一份谨记/">
+                      <h2 class="post-title">
+                        游走在网络世界，保留一份谨记。
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-04-26-我们的暮光之城/">
+                      <h2 class="post-title">
+                        我们的暮光之城
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-04-26-对自己的警醒/">
+                      <h2 class="post-title">
+                        对自己的警醒
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-04-18-夜深了·短杂谈/">
+                      <h2 class="post-title">
+                        夜深了·短杂谈
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-04-13-我们的灵魂是爱做的吗？/">
+                      <h2 class="post-title">
+                        我们的灵魂是爱做的吗？
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-04-03-对新闻媒体的探讨/">
+                      <h2 class="post-title">
+                        对新闻媒体的探讨
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-29-乌龙茶与追寻爱人的思考/">
+                      <h2 class="post-title">
+                        “乌龙茶”与追寻爱人的思考
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-28-回归博客与展望·祝愿与坚信/">
+                      <h2 class="post-title">
+                        回归博客与展望·祝愿与坚信
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-13-杂谈·展望与期望/">
+                      <h2 class="post-title">
+                        杂谈·展望与期望
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-09-书籍的讨论与感触/">
+                      <h2 class="post-title">
+                        书籍的讨论与感触
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-06-因为肺炎疫情的发生，一些国家出现歧视华裔亚裔/">
+                      <h2 class="post-title">
+                        因为肺炎疫情的发生，一些国家出现歧视华裔亚裔的现象；小结
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-02-综合改正·不使用个别网站/">
+                      <h2 class="post-title">
+                        综合改正·不使用个别网站
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-03-02-愤怒·读《ao3被墙是内化的恐同症幽灵在作怪！》有/">
+                      <h2 class="post-title">
+                        愤怒·读《Ao3被墙是内化的恐同症幽灵在作怪！》有感
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-29-在新的月份来临前·短谈/">
+                      <h2 class="post-title">
+                        在新的月份来临前·短谈
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-27-春天带来好转，也并存着失望与落寞/">
+                      <h2 class="post-title">
+                        春天带来好转，也并存着失望与落寞
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-17-新的故事/">
+                      <h2 class="post-title">
+                        新的故事
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-12-失望的等待/">
+                      <h2 class="post-title">
+                        失望的等待
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-09-希望的光芒、看《楼上楼下》/">
+                      <h2 class="post-title">
+                        希望的光芒、看《楼上楼下》
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-失望中的希望·今日小结-2/">
+                      <h2 class="post-title">
+                        失望中的希望·小结
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-失望中的希望·今日小结/">
+                      <h2 class="post-title">
+                        失望中的希望·今日小结
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-回归与未来展望/">
+                      <h2 class="post-title">
+                        回归与未来展望
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-关于丹麦《日德兰邮报》辱华/">
+                      <h2 class="post-title">
+                        关于丹麦《日德兰邮报》辱华
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-天空之下·愿中国安好/">
+                      <h2 class="post-title">
+                        天空之下·愿中国安好
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-疫情、电影及自我激励/">
+                      <h2 class="post-title">
+                        疫情、电影及自我激励
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-关于圣诞美妆日历的个人杂谈/">
+                      <h2 class="post-title">
+                        ［2020.11］关于圣诞美妆日历的个人杂谈
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-02-03-20-1-27心情不好的一段时间/">
+                      <h2 class="post-title">
+                        [20.1.27]心情不好的一段时间
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-24-新年除夕的阴天·杂谈/">
+                      <h2 class="post-title">
+                        新年除夕的阴天·杂谈
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-21-杂谈·《星际迷航》、香水及新型冠状病毒疫情/">
+                      <h2 class="post-title">
+                        杂谈·《星际迷航》、香水及新型冠状病毒疫情
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-19-看电影前的一篇杂谈·p同志、新春走基层/">
+                      <h2 class="post-title">
+                        看电影前的一篇杂谈·“P”同志、“新春走基层”
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-16-杂谈·20-1-16/">
+                      <h2 class="post-title">
+                        杂谈·20.1.16
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-15-杂谈·20-1-15/">
+                      <h2 class="post-title">
+                        杂谈·20.1.15
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://zllafgafg.github.io/post/2020-01-14-2020年的春节到来之际·新春碎碎念/">
+                      <h2 class="post-title">
+                        2020年的春节到来之际·新春碎碎念
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
+  
+  
+    <a href="https://zllafgafg.github.io/archives/page/2" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
         </div>
+      </div>
     </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p></p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/production.min.js"></script>
 
-        </div>
-    </body>
+
+
+
+
+
+  </body>
 </html>

@@ -1,155 +1,100 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <head>
+    <meta charset="utf-8" >
+
 <title>20·8·5新的记录 | Alain的个人博客</title>
-<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609399924375">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css" type='text/css' media='all'>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zllafgafg.github.io/favicon.ico?v=1609506207078">
+<link rel="stylesheet" href="https://zllafgafg.github.io/styles/main.css">
 
 
 
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/">love</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/">cartier</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/">tiktok</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/">书籍</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="现在是2020年8月5号，距离学校开学大约还有20天的时间，要开始加油努力学习了，复习功课，拾起课本。
+最近这两天，在医院里的老年人回到了家里，但是他的身体和精神状态仍然不太好，昏昏沉沉的。真的祈福老年人，希望可以尽快的好一些，总应该要让人..." />
+    <meta name="keywords" content="tiktok" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zllafgafg.github.io">
+        <img src="https://zllafgafg.github.io/images/avatar.png?v=1609506207078" class="site-logo">
+        <h1 class="site-title">Alain的个人博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://zllafgafg.github.io">  Alain的个人博客 </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">欢迎</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-
-
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+    <div>
+      
         
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      欢迎
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://zllafgafg.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-        <div class="entry-meta">
-          <span class="date">· 2020-08-05 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://zllafgafg.github.io" title="" rel="author"> </a>
-          </span>
-          
-            <span class="category">
-                    <span> / </span>
-                    <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/">tiktok</a>
-                </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>20·8·5新的记录</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">20·8·5新的记录</h2>
+            <div class="post-date">2020-08-05</div>
+            
+            <div class="post-content" v-pre>
               <p>现在是2020年8月5号，距离学校开学大约还有20天的时间，要开始加油努力学习了，复习功课，拾起课本。</p>
 <p>最近这两天，在医院里的老年人回到了家里，但是他的身体和精神状态仍然不太好，昏昏沉沉的。真的祈福老年人，希望可以尽快的好一些，总应该要让人们看到希望。</p>
 <p>这几天，又总是没有管理好自己，常常会做出自慰等类似的错误事情，其实自己也很羞于说出这件事情，但是它又是事实，需要不断地进行自我改正、自我改变。如果经常这么做，确实会对自己的身体健康乃至心理健康带来负面消极的影响，会让自己吃不消、做事情常常乏力疲倦。所以，一定要尽快的改正自己、控制住自己，让自己不要或者少去做错事。加油。</p>
@@ -165,120 +110,53 @@
 <p>Finally, although I didn’t like Douyin, I felt very angry when I saw that the U.S. government wanted to crack down on and acquire its overseas version of its business with very dirty and despicable means. ingrained. If the hegemonic thinking of the United States has not changed for a long time, then it will be useless to change how many leaders, and there will be no fundamental change. In contrast to China, China has indeed never suppressed any other country’s companies. China just wants multinational companies to abide by China’s laws, and Google has also voluntarily withdrawn from China.</p>
 <p>I don’t know if the criticism of the US government published on Tumblr will be deleted by Tumblr. If that is the case, Tumblr will no longer be used in the future.</p>
 
-            </article>
-          </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-                    
-                  <a href="https://zllafgafg.github.io/tag/C9P-gaBUo/" title="View all posts in love">love</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/YS1VV_TIDw/" title="View all posts in cartier">cartier</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/" title="View all posts in tiktok">tiktok</a>
-                    
-                    
-                    
-                  <a href="https://zllafgafg.github.io/tag/fYMJ5VlygJ/" title="View all posts in 书籍">书籍</a>
-                    
-                    
-              </p>
             </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://zllafgafg.github.io/images/avatar.png?v=1609399924375" class='avatar avatar-72 photo' height='72' width='72'>
-              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://zllafgafg.github.io'></a> </span>
-            </div>
-            <div class="bio">
-              <p></p>
-              
+            
+              <div class="tag-container">
                 
-              
+                  <a href="https://zllafgafg.github.io/tag/PjQlUDSIr4/" class="tag">
+                    tiktok
+                  </a>
                 
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
-        </div>
-          
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <a class="next page-numbers" href="https://zllafgafg.github.io/post/2020-07-30-20730一份记录/">下一篇->20.7.30一份记录</a>
               </div>
-            </nav>
-          
-      </div>
-      <section id="comments" class="comments">
-        
-      </section>
-    </div>
-  </div>
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://zllafgafg.github.io"> Alain的个人博客 </a>
-    </h1>
-    <p class="site-description">欢迎</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zllafgafg.github.io/post/2020-07-30-20730一份记录/">
+                  <h3 class="post-title">
+                    20.7.30一份记录
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
         </div>
+      </div>
     </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p></p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://zllafgafg.github.io/media/scripts/lib/production.min.js"></script>
 
-</div>
-</body>
+
+
+
+
+
+  </body>
 </html>
-
