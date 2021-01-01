@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zllafgafg.github.io</id>
     <title>Alain的个人博客</title>
-    <updated>2021-01-01T13:03:31.551Z</updated>
+    <updated>2021-01-01T13:16:35.891Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zllafgafg.github.io"/>
     <link rel="self" href="https://zllafgafg.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://zllafgafg.github.io/images/avatar.png</logo>
     <icon>https://zllafgafg.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Alain的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[内心的杂草]]></title>
+        <id>https://zllafgafg.github.io/post/nei-xin-de-za-cao/</id>
+        <link href="https://zllafgafg.github.io/post/nei-xin-de-za-cao/">
+        </link>
+        <updated>2021-01-01T13:04:59.000Z</updated>
+        <content type="html"><![CDATA[<p>人的内心有时候总会有很多的杂草在生长，这就需要我们静下心来，克制一下自己，好好的进行修剪杂草。<br>
+今天晚上，使用了f、t软件和豆瓣网站进行寻找朋友。但是还是发现，f软件很像因为注册次数过多而不能使用的b软件，没有什么意思，而t软件又和f软件很是相像。最后豆瓣网其实并不是一个很好的适合交友的网站吧。所以也就都不了了之了。<br>
+内心的杂草又开始逐渐野蛮地生长起来，我还是需要自己进行努力的克制一下自我，好好的修剪杂草，禅心禅宗。期待一切都会更好，期盼未来也会看得见希望。真的很像小时候丢手绢一样，那么的期待能够找到一个自己的、真正的好朋友。期待，期待。<br>
+🤠<br>
+稻草人屹立在田野上，屹立在寒风中，风不停的吹呀吹呀，呼哧呼哧的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[看电影有感]]></title>
         <id>https://zllafgafg.github.io/post/kan-dian-ying-you-gan/</id>
@@ -157,17 +170,5 @@ For “CCTV hot comment: Lin Xi, a successful songwriter, only misunderstood the
     今天暂时先写到这里了，下次再见。（顺便提一句，放假在家里也要及时、适当的进行学习，拿起自己的书本，长久不复习也会忘记，加油吧。）
   </p>
 </blockquote>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[最新的文章]——哭泣]]></title>
-        <id>https://zllafgafg.github.io/post/2020-07-29-最新的文章哭泣/</id>
-        <link href="https://zllafgafg.github.io/post/2020-07-29-最新的文章哭泣/">
-        </link>
-        <updated>2020-07-29T10:21:25.000Z</updated>
-        <content type="html"><![CDATA[<p>唉，我刚刚一连在tumblr发了几篇复制自己原文的文章，原因是因为我自己刚刚非常生气的删除了自己的github pages。不想再管他了！去他的吧！</p>
-<p>因为自己根本不是这块料，我根本不会使用和操作那个什么git，确实挺令我烦恼的。我还有一个付费的wordpress，但是我每一次都把时间花在了设置背景图片上面，很少很少才真正的去写博客文章。</p>
-<p>所以，我还是使用不嫌弃我的、我自己也会操作的tumblr吧，虽然想哭泣，但是也欲哭无泪了。何况现在的阿汤君还是较为绿色健康一点的，还是可以用一用的。好了，不写了，先聊到这里吧，下次见。</p>
-<p>呜呜·····~~~~</p>
-]]></content>
     </entry>
 </feed>
