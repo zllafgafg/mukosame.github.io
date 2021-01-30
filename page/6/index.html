@@ -1,273 +1,799 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>Alain的博客</title>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content=" " />
+<meta name="keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Alain的博客
+</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612007751192">
+
+    <!-- 没开启静态资源加速 -->
+<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612014196735">
 <link rel="stylesheet" href="https://alainlondon.site/styles/main.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/prism.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/font-awesome.min.css">
+<script type='text/javascript' src='https://alainlondon.site/media/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/plugins.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/script.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/aos.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/prism.js'></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.css">
+<script type="text/javascript" src="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.js"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="  欢迎
-【国内网络访问本博客可能较慢】">
+    <!-- 防止浏览器缓存 -->
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+</head>
+
+<body class="home blog custom-background round-avatars">
     
-  </head>
-  <body>
-    <div id="app" class="main">
+    <div class="Yarn_Background" style="background-image: url(https://wx1.sinaimg.cn/small/006o4ePwly1gn61u4ors2j30u00gv75o.jpg);"></div>
+     
+    <!-- 搜索开始 -->
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alainlondon.site">
-        <img src="https://alainlondon.site/images/avatar.png?v=1612007751192" class="site-logo">
-        <h1 class="site-title">Alain的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-        欢迎
-【国内网络访问本博客可能较慢】
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-16-杂谈·20-1-16/">
-                  <h2 class="post-title">杂谈·20.1.16</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-15-杂谈·20-1-15/">
-                  <h2 class="post-title">杂谈·20.1.15</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-14-2020年的春节到来之际·新春碎碎念/">
-                  <h2 class="post-title">2020年的春节到来之际·新春碎碎念</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-12-涉政文章·中国湾湾/">
-                  <h2 class="post-title">涉政文章·中国“湾湾”</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-11
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-10-杂谈有感·看《2019同志电影年度报告》/">
-                  <h2 class="post-title">杂谈有感·看《2019同志电影年度报告》</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-10
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-08-关于个人喜欢的时尚品牌/">
-                  <h2 class="post-title">关于个人喜欢的时尚品牌</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-08
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-07-关于在中国，一个话题的讨论·代孕/">
-                  <h2 class="post-title">关于在中国，一个话题的讨论·代孕</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-07
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-05-杂谈·19-12-11/">
-                  <h2 class="post-title">杂谈·19.12.11</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-05
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-05-杂谈·周杰伦的歌🎄🎄/">
-                  <h2 class="post-title">杂谈·周杰伦的歌</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-05
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-01-05-alain新春走基层报道/">
-                  <h2 class="post-title">Alain新春走基层报道</h2>
-                </a>
-                <div class="post-date">
-                  2020-01-05
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-    <a href="https://alainlondon.site/page/5/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
-  
-  
-    <a href="https://alainlondon.site/page/7/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
-  
-</div>
-
+<div class="js-search search-form search-form--modal">
+    <div class="search-form__inner">
+        <div>
+            <div id="search-container" class="ajax_search">
+                <form method="get" id="gridea-search-form" action="https://alainlondon.site/search/">
+                    <div class="filter_container">
+                        <input type="text" value="" autocomplete="off" placeholder="请输入要搜索的内容" name="q" id="search-input" />
+                        <ul id="search_filtered" class="search_filtered"></ul>
+                    </div>
+                    <!-- <input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" /> -->
+                </form>
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+<!-- 搜索结束 -->
+<div class="navi" data-aos="fade-down">
+    <div class="bt-nav">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <div class="navbar animated fadeInRight">
+        <div class="inner">
+            <nav id="site-navigation" class="main-navigation">
+                <div id="main-menu" class="main-menu-container">
+                    <div class="menu-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/">
+                                                首页
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/archives">
+                                                归档
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/tags">
+                                                标签
+                                            </a>
+                                        </li>
+                                        
+                                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- #site-navigation -->
+        </div>
+    </div>
+</div>
+<div class="hebin" data-aos="fade-down">
+    <i class=" js-toggle-search fa fa-search"></i>
+</div>
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+    <div class="site-branding text-center">
+        <a href="">
+            <figure>
+                
+                    <img class="custom-logo avatar" src="https://alainlondon.site/images/avatar.png?v=1612014196735" />
+                    
+            </figure>
+        </a>
+        <h3 class="blog-description"><p>  欢迎
+【国内网络访问本博客可能较慢】</p></h3>
+    </div>
+    <!-- .site-branding -->
+    <div class="decor-part">
+        <div id="particles-js"></div>
+    </div>
+    <div class="animation-header">
+        <div class="decor-wrapper">
+            <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+                <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+            </svg>
+        </div>
+    </div>
+</header>
+
+    <div id="main" class="content">
+        <div class="container">
+            <!--  -->
+              
+
+            <article itemscope="itemscope">
+                
+                    
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-16-杂谈·20-1-16/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-16-杂谈·20-1-16/" rel="bookmark">杂谈·20.1.16</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-15</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  自己觉得中国的丝芙兰引进品牌的能力确实很好，现在国内市场陆续有了口红皇后、evelom、纳西素香水这些新的化妆美容品牌子，而且国内官网也同步上架了，就是丝芙兰各方面的服务不好，尤其要数门店，态度很差或者极差。
+
+
+  本来还对中国的spacenk的发展抱有希望，但是它家品牌太少、价格比较昂贵且没有任何优惠措施，唯一有优惠的spacenk天猫国际店铺还常常卖一些临期产品，日期很不新鲜，而且sp...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-16-杂谈·20-1-16/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-16-杂谈·20-1-16/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-15-杂谈·20-1-15/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-15-杂谈·20-1-15/" rel="bookmark">杂谈·20.1.15</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-15</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  闲来无聊，也不知道写点什么，那就随便写写吧。
+
+
+  中国的快递已经要开始停运了，因为春节快要到来了，都已经陆陆续续的放假了。我准备在二月份快开学时再买一点东西，以便带到学校去。今天才发现blogger没有“隐私博文”这一功能，觉得这一点不是很好，像wordpress网站就有“隐私博客”这一功能，觉得毕竟有时候有些文章还是不想让别人看见的，怕会引起非议和争论，同时作为隐私内容，只是想写出来，...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-15-杂谈·20-1-15/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-15-杂谈·20-1-15/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-14-2020年的春节到来之际·新春碎碎念/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-14-2020年的春节到来之际·新春碎碎念/" rel="bookmark">2020年的春节到来之际·新春碎碎念</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-14</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  .不要太纠结于化妆品的购买问题上，少一点注重自己的脸部，少一点纠结，多一点珍惜当下，努力走出心中纠结方面的阴霾，以更加快速、更加高质量的战胜心理问题，并努力争取在最后夺取胜利。
+
+
+  .关注中国新闻战线在2020年初之际的“新春走基层”报道，关注脱贫攻坚的这一收官之年，关注来自中国一线的报道，看一看中国党和政府对人民的庄严承诺吧。请让我们在未来的这一年里拭目以待。不忘初心，新春走基层。
+
+...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-14-2020年的春节到来之际·新春碎碎念/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-14-2020年的春节到来之际·新春碎碎念/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-12-涉政文章·中国湾湾/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-12-涉政文章·中国湾湾/" rel="bookmark">涉政文章·中国“湾湾”</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-11</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">看一看这篇文章是否会被外国网站所删除吧。
+
+  不论是香港人、澳门人还是台湾人，我首先都要告诉你，你是中国人！你是炎黄的子孙！在这里，我们要正告那些香港港独暴徒以及台独人士:你们终将要被历史所唾弃和抛弃！
+
+
+  或许有人会说我的这篇文章是在给坏人们洗脑，但是你们要知道，自家人不打自家人！祖国人民也不想与同胞为敌，那些被称为敌人的只是少部分的险恶、别有用心的人。
+
+
+  2020中国“湾湾”地区领...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-12-涉政文章·中国湾湾/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-12-涉政文章·中国湾湾/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-10-杂谈有感·看《2019同志电影年度报告》/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-10-杂谈有感·看《2019同志电影年度报告》/" rel="bookmark">杂谈有感·看《2019同志电影年度报告》</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-10</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  
+      
+  
+  
+     
+&amp;lt;div&amp;gt;
+  各位好，欢迎收看Alain的杂谈文章，今天我要向大家推荐一篇中国豆瓣网的文章《2019年同志电影年度报告：数据、趋势、展望...》，网址如下：
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div&amp;gt;
+  https://m.douban.com/note/747320684/
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div&amp;gt;
+...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-10-杂谈有感·看《2019同志电影年度报告》/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-10-杂谈有感·看《2019同志电影年度报告》/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-08-关于个人喜欢的时尚品牌/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-08-关于个人喜欢的时尚品牌/" rel="bookmark">关于个人喜欢的时尚品牌</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-08</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  各位好，这篇文章初始发表于我的中国豆瓣网，时间是2019-04-19 13:22:07
+
+
+  我清晰地记得那个时间，那时我在图书馆里，那是我坐在椅子上用手机一个一个打出来字的时候，可是现在却回不去了，希望一切还来得及。下面我们进入文章正轨吧。
+
+
+
+
+  虽然买不起，但是个人非常喜欢的男士（女士）时尚奢侈品牌:法国爱马仕（Hermès），法国思琳（Céline）及英国博柏利。
+
+
+  很不...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-08-关于个人喜欢的时尚品牌/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-08-关于个人喜欢的时尚品牌/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-07-关于在中国，一个话题的讨论·代孕/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-07-关于在中国，一个话题的讨论·代孕/" rel="bookmark">关于在中国，一个话题的讨论·代孕</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-07</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">亲爱的朋友，不知道你们知不知道“代孕”，现在在中国的网络上，这个话题被讨论的热火朝天。现在让我们用平常心、最初的心态来看一看，说一说。
+
+
+
+  不知道你知不知道代孕或者支不支持代孕。以下摘自网上:“代孕，是指将受精卵子植入代孕妈妈子宫，由孕母替他人完成“十月怀胎一朝分娩”的过程。妇女代孕时需植入他人的受精卵子，精子与卵子在人体外的结合，必须实施“人类辅助生殖技术”。我国有关法律对“人类辅助生殖技...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-07-关于在中国，一个话题的讨论·代孕/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-07-关于在中国，一个话题的讨论·代孕/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-05-杂谈·19-12-11/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-05-杂谈·19-12-11/" rel="bookmark">杂谈·19.12.11</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-05</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  我好想吐槽。。。
+
+
+  虽然想，但可能不适合用一些社区社交软件吧，所以只是偶尔看看:不喜欢微博，但是经常会搜几个关键词，如“spacenk、丝芙兰”等；豆瓣越来越太花里胡哨了，臃肿又复杂；instagram就是一个小红书，里面的帅哥照片等等都是在吸睛博眼球，而且发表东西必须配图片！；tumblr还是不太清澈干净，常常涉及少儿不宜；其他国外app要么不好用，要么反华言论太多，实在用不了。
+...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-05-杂谈·19-12-11/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-05-杂谈·19-12-11/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-05-杂谈·周杰伦的歌🎄🎄/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-05-杂谈·周杰伦的歌🎄🎄/" rel="bookmark">杂谈·周杰伦的歌</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-05</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">周杰伦的歌曲太好听了！真的很精彩，而且都在传递着正能量，积极又向上。如果中央广播电视总台（中央电视台）春节联欢晚会能再邀请一次周杰伦就好了，希望中央台的《经典咏流传》也能够邀请周杰伦，那一定也很不错！再如果，要是周杰伦能为一部同性题材的电影创作主题歌曲就更好了！比如可以为中国台湾地区的《我的灵魂是爱做的》创作主题曲就好了！太感人了！
+
+  觉得现在的中国歌曲（华语歌曲）中，有的显得太俗气，没有什么...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-05-杂谈·周杰伦的歌🎄🎄/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-05-杂谈·周杰伦的歌🎄🎄/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-01-05-alain新春走基层报道/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-01-05-alain新春走基层报道/" rel="bookmark">Alain新春走基层报道</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-01-05</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">
+  《向世界诉说中国故事:写在2020新年之前，Alain新春走基层》
+
+
+  2020年就要到了，在这2019年的年末，让我们一起探寻新春走基层的故事。
+
+
+  一:
+
+
+  第一站，我们来到了中国江苏省南京市的一家新华书店。这家新华书店坐落于六朝古都南京的新街口中心商业圈，每天人来人往，客流量很大。Alain注意到，暑假时，在每天早上临近九点营业时间之前，会有不少读者在大门口等待进入书店看书...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-01-05-alain新春走基层报道/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-01-05-alain新春走基层报道/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        new Valine({
+            el: '#vcomments',
+            appId: '',
+            appKey:'',
+            visitor: true, // 阅读量统计
+            placeholder: '请留下你的评论吧！' 
+        })
+    </script>
+                 
+                
+    <div class="pagination js-pagination">
+        
+            <a href="https://alainlondon.site/page/5/">上一页</a>
+            
+                
+                    <a href="https://alainlondon.site/page/7/">下一页</a>
+                    
+    </div>
+    
+            </article>
+        </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+    
+<div id="backToTop" style="display: block;">
+    <img src="https://moguos.oss-cn-shenzhen.aliyuncs.com/boxmoe/assets/images/top/lolisister1.gif">
+</div>
 
 
+  
 
 
+<script type='text/javascript' src='https://alainlondon.site/media/js/particles.js'></script>
 
 
-  </body>
+<footer id="footer" class="overlay animated from-top">
+    <div class="decor-wrapper">
+        <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+            <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+        </svg>
+    </div>
+    <div class="socialize" data-aos="zoom-in">
+        
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="cr">
+        Copyright&copy;
+         |
+        <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
+    </div>
+</footer>
+
+</body>
+
 </html>

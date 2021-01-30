@@ -1,273 +1,739 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>Alain的博客</title>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content=" " />
+<meta name="keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Alain的博客
+</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612007751192">
+
+    <!-- 没开启静态资源加速 -->
+<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612014196735">
 <link rel="stylesheet" href="https://alainlondon.site/styles/main.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/prism.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/font-awesome.min.css">
+<script type='text/javascript' src='https://alainlondon.site/media/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/plugins.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/script.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/aos.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/prism.js'></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.css">
+<script type="text/javascript" src="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.js"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="  欢迎
-【国内网络访问本博客可能较慢】">
+    <!-- 防止浏览器缓存 -->
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+</head>
+
+<body class="home blog custom-background round-avatars">
     
-  </head>
-  <body>
-    <div id="app" class="main">
+    <div class="Yarn_Background" style="background-image: url(https://wx1.sinaimg.cn/small/006o4ePwly1gn61u4ors2j30u00gv75o.jpg);"></div>
+     
+    <!-- 搜索开始 -->
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alainlondon.site">
-        <img src="https://alainlondon.site/images/avatar.png?v=1612007751192" class="site-logo">
-        <h1 class="site-title">Alain的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-        欢迎
-【国内网络访问本博客可能较慢】
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-05-18-再回首夏日的气味/">
-                  <h2 class="post-title">再回首·夏日的气味</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-18
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-05-01-游走在网络世界保留一份谨记/">
-                  <h2 class="post-title">游走在网络世界，保留一份谨记。</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-01
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-04-26-我们的暮光之城/">
-                  <h2 class="post-title">我们的暮光之城</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-26
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-04-26-对自己的警醒/">
-                  <h2 class="post-title">对自己的警醒</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-26
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-04-18-夜深了·短杂谈/">
-                  <h2 class="post-title">夜深了·短杂谈</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-17
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-04-13-我们的灵魂是爱做的吗？/">
-                  <h2 class="post-title">我们的灵魂是爱做的吗？</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-04-03-对新闻媒体的探讨/">
-                  <h2 class="post-title">对新闻媒体的探讨</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-03
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-03-29-乌龙茶与追寻爱人的思考/">
-                  <h2 class="post-title">“乌龙茶”与追寻爱人的思考</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-29
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-03-28-回归博客与展望·祝愿与坚信/">
-                  <h2 class="post-title">回归博客与展望·祝愿与坚信</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-28
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://alainlondon.site/post/2020-03-13-杂谈·展望与期望/">
-                  <h2 class="post-title">杂谈·展望与期望</h2>
-                </a>
-                <div class="post-date">
-                  2020-03-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-    <a href="https://alainlondon.site/page/2/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
-  
-  
-    <a href="https://alainlondon.site/page/4/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
-  
-</div>
-
+<div class="js-search search-form search-form--modal">
+    <div class="search-form__inner">
+        <div>
+            <div id="search-container" class="ajax_search">
+                <form method="get" id="gridea-search-form" action="https://alainlondon.site/search/">
+                    <div class="filter_container">
+                        <input type="text" value="" autocomplete="off" placeholder="请输入要搜索的内容" name="q" id="search-input" />
+                        <ul id="search_filtered" class="search_filtered"></ul>
+                    </div>
+                    <!-- <input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" /> -->
+                </form>
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+<!-- 搜索结束 -->
+<div class="navi" data-aos="fade-down">
+    <div class="bt-nav">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <div class="navbar animated fadeInRight">
+        <div class="inner">
+            <nav id="site-navigation" class="main-navigation">
+                <div id="main-menu" class="main-menu-container">
+                    <div class="menu-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/">
+                                                首页
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/archives">
+                                                归档
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/tags">
+                                                标签
+                                            </a>
+                                        </li>
+                                        
+                                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- #site-navigation -->
+        </div>
+    </div>
+</div>
+<div class="hebin" data-aos="fade-down">
+    <i class=" js-toggle-search fa fa-search"></i>
+</div>
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+    <div class="site-branding text-center">
+        <a href="">
+            <figure>
+                
+                    <img class="custom-logo avatar" src="https://alainlondon.site/images/avatar.png?v=1612014196735" />
+                    
+            </figure>
+        </a>
+        <h3 class="blog-description"><p>  欢迎
+【国内网络访问本博客可能较慢】</p></h3>
+    </div>
+    <!-- .site-branding -->
+    <div class="decor-part">
+        <div id="particles-js"></div>
+    </div>
+    <div class="animation-header">
+        <div class="decor-wrapper">
+            <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+                <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+            </svg>
+        </div>
+    </div>
+</header>
+
+    <div id="main" class="content">
+        <div class="container">
+            <!--  -->
+              
+
+            <article itemscope="itemscope">
+                
+                    
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-05-18-再回首夏日的气味/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-05-18-再回首夏日的气味/" rel="bookmark">再回首·夏日的气味</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-05-18</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">比起wordpress，其实我更想在一些中文社区里面写写文章什么的，因为首先是不要收费，而且有人看、有人可以互动，但是奈何这些网站政治审查太严重太严格，虽然我没有什么政治倾向，但是因为出现关键词，最后导致我什么也发不出去，很是令人生气。比如豆瓣和知乎，而新浪微博又会限流，最后真的是觉得中国的这些社交网站平台真的是卑鄙至极；但是你说国外的社交网站就又好吗？又何尝不卑鄙呢。
+最近买了两个香水的试用装，...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-05-18-再回首夏日的气味/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-05-18-再回首夏日的气味/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-05-01-游走在网络世界保留一份谨记/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-05-01-游走在网络世界保留一份谨记/" rel="bookmark">游走在网络世界，保留一份谨记。</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-05-01</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">在使用网络代理后，你会发现可以浏览很多的网站。这里面有的一些对工作、学习和生活会有帮助和促进作用；有的一些，或者说是很多，它会是一些负面的东西，比如虚假的、左右人思维观念的“颜色洗劫”式的新闻，甚至是非常之多的不健康的东西。用了网络代理工具，在带来些许方便的同时，也要注意和警惕与之伴随而来的负面影响。一定要管理好自己，浏览正确的信息，不要任意看、到处看，更不要没有节制的、没有底线的看。 每一次做错...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-05-01-游走在网络世界保留一份谨记/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-05-01-游走在网络世界保留一份谨记/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-04-26-我们的暮光之城/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-04-26-我们的暮光之城/" rel="bookmark">我们的暮光之城</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-04-26</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">今天给自己的wordpress更换了一个主题模块，觉得一切都更新了一点，也挺好的。
+我比较喜欢《暮光之城》里面的爱德华，我觉得他长得非常的俊美，好吧。在这一部电影里面，其中的画面和背景都非常的唯美，里面讲述的是发生在美国的一个故事，而且里面的拍摄天气常常都是没有阳光的，这一种拍摄画面和效果也令我非常的喜欢，给人一种很舒服的感觉，我觉得里面非常棒。尽管电影里的女主角和男主角在现实生活中结婚后又因为一...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-04-26-我们的暮光之城/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-04-26-我们的暮光之城/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-04-26-对自己的警醒/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-04-26-对自己的警醒/" rel="bookmark">对自己的警醒</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-04-26</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">世界这么大，在这里一同携手。
+与其每天听别人说这么多、看媒体报道这么多，不如自己写一写、说一说。
+今后我一定不能再老是去看同志之声这一类相关的微博资讯了。因为这样非常的不好，我几乎每一天都在接收和接受负能量、负面消息。与同性恋有关的新闻真的太不积极了，都是一些遭受歧视和遭到迫害的消息，我觉得这样很不好、非常不好。我以后一定一定要嘱咐自己并且管住自己的手和内心，千万不能再去看同志之声相关的微博了。
+...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-04-26-对自己的警醒/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-04-26-对自己的警醒/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-04-18-夜深了·短杂谈/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-04-18-夜深了·短杂谈/" rel="bookmark">夜深了·短杂谈</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-04-17</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">这两天因为尝试github，导致花费了大量的时间，也可以说是白白的浪费时间。github我自己完全都看不懂，不光因为是全部英文，更重要的是里面都是代码和编程类的东西。我以为自己能学会一点基础的东西，可是折腾了很久很久，都一直不知道怎么做。而且github的issues写博客存在不安全性——就是别人可以任意评论和添加新的issues，这一点也导致我最终放弃了使用它，我进行了网站仓库的关闭化处理，所以...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-04-18-夜深了·短杂谈/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-04-18-夜深了·短杂谈/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-04-13-我们的灵魂是爱做的吗？/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-04-13-我们的灵魂是爱做的吗？/" rel="bookmark">我们的灵魂是爱做的吗？</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-04-13</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">我们的灵魂是爱做的吗？情绪有时激动，有时又很低沉，总会被一些沿路上的其他相关的事件耽误了自己主要要做的事。像小妇人一样，我们都有自己在不断追寻的爱与美好，我们一直在寻找。
+现在全球新冠肺炎疫情还在继续的发展之中，有的地方还是依然很形势严峻，我们祈福他们，希望能够尽快的度过这样一个灾难性的全球事件。英国首相鲍里斯·约翰逊之前因为新冠肺炎阳性并且病情有些严重，而转入了ICU，现在已经有所好转而离开了I...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-04-13-我们的灵魂是爱做的吗？/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-04-13-我们的灵魂是爱做的吗？/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-04-03-对新闻媒体的探讨/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-04-03-对新闻媒体的探讨/" rel="bookmark">对新闻媒体的探讨</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-04-03</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">SpaceNK好像是因为肺炎疫情等导致资金不足，现在准备退出中国市场了。其实我也不看好它，不光是价格比较昂贵，更重要的是没有人流量、客流量，很少的人浏览光顾，和丝芙兰不能相比。
+其实听一听优秀的影视剧里面的法语原声或者是英语原声都是很好听的，既可以学习外语，又可以更好的原生态的感受这一部影视剧。我不太喜欢中央电视台电影频道cctv6对外国电影的配音，虽然那些中文配音也很经典，可是总觉得不是那么回事...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-04-03-对新闻媒体的探讨/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-04-03-对新闻媒体的探讨/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-03-29-乌龙茶与追寻爱人的思考/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-03-29-乌龙茶与追寻爱人的思考/" rel="bookmark">“乌龙茶”与追寻爱人的思考</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-03-29</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">写了很长时间的博客了，没想到竟然闹出了一个笑话，出了一个乌龙事件，我一直在写的博客竟然是我的主站点的一个子站点网站，对于这一点我竟然还浑然不知、浑然不觉，直到因为一些原因，自己才发现了异样，发现了不同，最后还是寻求了客服人员的帮助才得以弄好自己的网站，但是目前不能从网站面板登录了，也是因为两个网站站点产生了冲突所致。不过好在最后终于弄好了吧，也算结束了一件事情，希望以后可以更好吧。
+现在全球肺炎疫...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-03-29-乌龙茶与追寻爱人的思考/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-03-29-乌龙茶与追寻爱人的思考/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-03-28-回归博客与展望·祝愿与坚信/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-03-28-回归博客与展望·祝愿与坚信/" rel="bookmark">回归博客与展望·祝愿与坚信</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-03-28</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">时隔很多很多天，我又回归了wordpress博客，我觉得wordpress.com广告太多，很是令人厌烦，而且写起东西来总觉得不太舒服，仿佛有个人在背后一直看着你、盯着你一样；而wordpress.org维护起来又确实很复杂，很是不容易，对于一无所知的新手来说一定要摸索很久很久。但是最后，我还是选择了wordpress.org，希望在这里继续下去吧。谢谢。
+现在中国的新型肺炎疫情已经得到了有效的控...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-03-28-回归博客与展望·祝愿与坚信/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-03-28-回归博客与展望·祝愿与坚信/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="post post-layout-list shadow" data-aos="fade-up">
+    <div class="postnormal review ">
+        <div class="post-container review-item">
+            <div class="row review-item-wrapper">
+                <!-- 文章列表小图开始 -->
+                <div class="col-sm-3">
+                    <a rel="nofollow" href="https://alainlondon.site/post/2020-03-13-杂谈·展望与期望/">
+                        
+                        <div class="review-item-img"
+                            style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                        </div>
+                        
+                    </a>
+                </div>
+                <!-- 文章列表小图结束 -->
+                <div class="col-sm-9 flex-xs-middle">
+                    <div class="review-item-title">
+                        <a href="https://alainlondon.site/post/2020-03-13-杂谈·展望与期望/" rel="bookmark">杂谈·展望与期望</a>
+                    </div>
+                    <div class="review-item-creator"><b>发布日期：</b>2020-03-13</div>
+                    <!-- <span class="review-item-info"><b>总浏览量：</b>1600 reads</span> -->
+                    <!-- Tag -->
+                    
+
+                </div>
+            </div>
+            <!-- 文章列表大图开始 -->
+            <div class="review-bg-wrapper">
+                
+                <div class="bg-blur"
+                    style="background-image: url(https://wx3.sinaimg.cn/small/006o4ePwly1gn61u07vc0j30u00g9q2y.jpg);">
+                </div>
+                
+            </div>
+            <!-- 文章列表大图结束 -->
+        </div>
+        <div class="post-container">
+            
+            <div class="entry-content">本来不想写点什么的，但还是随便写写吧。
+今天是3月13日了，中国的肺炎疫情已经在慢慢的好转了，而世界上其他国家的疫情却在加剧发展，在变得严重，比如意大利和伊朗，确诊人数都突破了一万人，唉，希望可以快一点变好，中国也向一些疫情严重的国家派去了援助的医疗小组，希望大家一起努力，共同度过这次世界性质的难关。现在，中国的疫情已经大大好转了，专家称我们这一次的疫情流行高峰已经过去了，这都离不开我们党的领导，...</div>
+            
+            <div class="post-footer">
+                <a class="gaz-btn primary" href="https://alainlondon.site/post/2020-03-13-杂谈·展望与期望/">READ MORE</a>
+                <span class="total-comments-on-post pull-right"><a href=""><span class="valine-comment-count"
+                            data-xid="/post/2020-03-13-杂谈·展望与期望/"></span>
+                        Comments</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        new Valine({
+            el: '#vcomments',
+            appId: '',
+            appKey:'',
+            visitor: true, // 阅读量统计
+            placeholder: '请留下你的评论吧！' 
+        })
+    </script>
+                 
+                
+    <div class="pagination js-pagination">
+        
+            <a href="https://alainlondon.site/page/2/">上一页</a>
+            
+                
+                    <a href="https://alainlondon.site/page/4/">下一页</a>
+                    
+    </div>
+    
+            </article>
+        </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+    
+<div id="backToTop" style="display: block;">
+    <img src="https://moguos.oss-cn-shenzhen.aliyuncs.com/boxmoe/assets/images/top/lolisister1.gif">
+</div>
 
 
+  
 
 
+<script type='text/javascript' src='https://alainlondon.site/media/js/particles.js'></script>
 
 
-  </body>
+<footer id="footer" class="overlay animated from-top">
+    <div class="decor-wrapper">
+        <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+            <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+        </svg>
+    </div>
+    <div class="socialize" data-aos="zoom-in">
+        
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="cr">
+        Copyright&copy;
+         |
+        <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
+    </div>
+</footer>
+
+</body>
+
 </html>

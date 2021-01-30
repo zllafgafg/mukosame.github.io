@@ -1,95 +1,186 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>武汉，恢复生机 | Alain的博客</title>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content=" " />
+<meta name="keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    武汉，恢复生机 | Alain的博客
+</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612007751192">
+
+    <!-- 没开启静态资源加速 -->
+<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612014196735">
 <link rel="stylesheet" href="https://alainlondon.site/styles/main.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/prism.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/font-awesome.min.css">
+<script type='text/javascript' src='https://alainlondon.site/media/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/plugins.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/script.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/aos.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/prism.js'></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.css">
+<script type="text/javascript" src="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.js"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="这张图片应该是中国武汉，武汉大学的樱花。经历过疫情的不幸后，武汉又恢复了往日的生机。This picture should be the cherry blossoms of Wuhan University, Wuhan, China. ..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alainlondon.site">
-        <img src="https://alainlondon.site/images/avatar.png?v=1612007751192" class="site-logo">
-        <h1 class="site-title">Alain的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+        
+                <!-- 没开启静态资源加速 -->
+                <script>
+                    $(document).ready(function() {
+                        /**
+                         * 给文章的图片添加放大效果
+                         */
+                        var link;
+                        $(".post_content img").each(function() {
+                            link = $(this).attr("src");
+                            $(this).wrap("<a href=\"" + link + "\"rel =\"gallery\"></a>")
+                        })
+                    })
+                </script>
+                
+</head>
+
+<body class="home blog custom-background round-avatars">
+    <!-- <body class="home blog custom-background round-avatars" itemscope="" itemtype="http://schema.org/Organization" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"></body> -->
+    
+    <div class="Yarn_Background" style="background-image: url(https://wx1.sinaimg.cn/small/006o4ePwly1gn61u4ors2j30u00gv75o.jpg);"></div>
+     
+    <!-- 搜索开始 -->
+
+<div class="js-search search-form search-form--modal">
+    <div class="search-form__inner">
+        <div>
+            <div id="search-container" class="ajax_search">
+                <form method="get" id="gridea-search-form" action="https://alainlondon.site/search/">
+                    <div class="filter_container">
+                        <input type="text" value="" autocomplete="off" placeholder="请输入要搜索的内容" name="q" id="search-input" />
+                        <ul id="search_filtered" class="search_filtered"></ul>
+                    </div>
+                    <!-- <input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" /> -->
+                </form>
+            </div>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-        欢迎
-【国内网络访问本博客可能较慢】
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
 </div>
+<!-- 搜索结束 -->
+<div class="navi" data-aos="fade-down">
+    <div class="bt-nav">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <div class="navbar animated fadeInRight">
+        <div class="inner">
+            <nav id="site-navigation" class="main-navigation">
+                <div id="main-menu" class="main-menu-container">
+                    <div class="menu-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/">
+                                                首页
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/archives">
+                                                归档
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/tags">
+                                                标签
+                                            </a>
+                                        </li>
+                                        
+                                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- #site-navigation -->
+        </div>
+    </div>
+</div>
+<div class="hebin" data-aos="fade-down">
+    <i class=" js-toggle-search fa fa-search"></i>
+</div>
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+    <div class="site-branding text-center">
+        <a href="">
+            <figure>
+                
+                    <img class="custom-logo avatar" src="https://alainlondon.site/images/avatar.png?v=1612014196735" />
+                    
+            </figure>
+        </a>
+        <h3 class="blog-description"><p>  欢迎
+【国内网络访问本博客可能较慢】</p></h3>
+    </div>
+    <!-- .site-branding -->
+    <div class="decor-part">
+        <div id="particles-js"></div>
+    </div>
+    <div class="animation-header">
+        <div class="decor-wrapper">
+            <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+                <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+            </svg>
+        </div>
+    </div>
+</header>
 
+        <!-- 图片放大开始 -->
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">武汉，恢复生机</h2>
-            <div class="post-date">2020-08-09</div>
-            
-            <div class="post-content" v-pre>
-              <h2 id="这张图片应该是中国武汉武汉大学的樱花-经历过疫情的不幸后武汉又恢复了往日的生机-this-picture-should-be-the-cherry-blossoms-of-wuhan-university-wuhan-china-after-experiencing-the-tragedy-of-the-epidemic-wuhan-has-returned-to-its-former-vitality">这张图片应该是中国武汉，武汉大学的樱花。经历过疫情的不幸后，武汉又恢复了往日的生机。This picture should be the cherry blossoms of Wuhan University, Wuhan, China. After experiencing the tragedy of the epidemic, Wuhan has returned to its former vitality.</h2>
+        <!-- 图片放大结束 -->
+        <div id="main" class="content">
+            <!-- 测试开始 -->
+
+            <!-- 测试结束 -->
+            <!-- 文章开始 -->
+            <div class="container">
+                <article class="js-gallery post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                    <style>
+                        .container {
+                            padding: 10px 0px;
+                        }
+                        
+                        .post {
+                            margin: 0 auto
+                        }
+                    </style>
+
+                    <section class="post_content">
+                        <header class="post_header">
+                            <h1 class="post_title yellow-under">
+                                武汉，恢复生机
+                            </h1>
+                        </header>
+                        <div class="post-body js-gallery">
+                            <h2 id="这张图片应该是中国武汉武汉大学的樱花-经历过疫情的不幸后武汉又恢复了往日的生机-this-picture-should-be-the-cherry-blossoms-of-wuhan-university-wuhan-china-after-experiencing-the-tragedy-of-the-epidemic-wuhan-has-returned-to-its-former-vitality">这张图片应该是中国武汉，武汉大学的樱花。经历过疫情的不幸后，武汉又恢复了往日的生机。This picture should be the cherry blossoms of Wuhan University, Wuhan, China. After experiencing the tragedy of the epidemic, Wuhan has returned to its former vitality.</h2>
 <p>好了，我们说说主题，言归正传吧。经历过浏览Gridea等博客模板后，我又回到了tumblr，当然是被劝退的，我还是不会操作那些网站和基础性的编程，而且心累了，也不想那么做了，所以就继续使用tumblr了。</p>
 <p>我觉得中国的一些地方有些怪怪的，在中国，歧视过同性恋群体的明星艺人竟然还发展的越来越好了。比如某东、某现、某柏然、某战，等等等等。你可能会说我在拉仇恨，好吧，其实这只是一种生气与愤怒、抱怨一种社会的不公，但是没有很多仇恨在这里。试问一下，歧视同性恋的明星艺人难道不算是劣迹艺人吗？我觉得他们和劣迹艺人没有什么不同。</p>
 <p>歧视与仇恨在世界各地都存在，但是爱与友善也同样存在。在日本和韩国，既有男明星为LGBT发声，也不缺少又女明星为我们发声，中国的一些明星艺人真的应该像邻国的同辈们学习学习。而在中国也是有好人的，比如胡军，他出演过《蓝宇》，其实出演过同性题材电影这样一个身份背景不是那么的重要，重要的是他没有对同性恋等少数群体有恶意，相反的是充满了友善，从一些媒体的采访中，我们看到了他对少数群体的理解，可能还有着一份默默的支持。看到这些，我们很欣慰，心里真的暖暖的。</p>
@@ -103,45 +194,155 @@
 <p>Britain is no longer the same Britain, the world is no longer the previous world, and China is no longer the previous China that was bullied by the great powers. It needs to be clearly pointed out that some Western countries such as the United Kingdom and the United States should not interfere in China’s internal affairs [including but not limited to Hong Kong, China, and China’s Xinjiang/Tibet area]. China will not interfere in whether Scotland will hold an independence referendum in the United Kingdom, let alone intervene in the U.S. election. Therefore, it also asks the United Kingdom and other countries to do their own things, and the authorities manage their own countries, not interfere in other countries’ internal affairs, and do not demonize China. .</p>
 <p>You are welcome to come to China to see, walk, and have fun to enhance understanding and add a sense of goodwill and friendship. Citizens of Western countries should truly and truly understand China, and you may fall in love with it after you understand it. Don’t be too hostile or prejudiced.</p>
 
+
+                        </div>
+                        <!-- Tips开始 -->
+                        
+                                <!-- Tips结束 -->
+                                <!-- 文章底部信息开始 -->
+                                <div class="meta split split--responsive cf">
+                                    <div class="split__title">
+                                        <time>2020-08-09</time>
+                                        
+                                                    
+                                    </div>
+                                    <div id="social-share"><span class="entypo-share"><i class="fa fa-share-square-o"></i>分享</span></div>
+                                    <div class="slide">
+                                        <a class="btn-slide" title="switch down"><i class="fa fa-chevron-down"></i>折叠评论区</a>
+                                    </div>
+                                </div>
+                                <!-- 文章底部信息结束 -->
+                    </section>
+                </article>
             </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://alainlondon.site/post/2020-08-07-失败尝试后继续在这里/">
-                  <h3 class="post-title">
-                    失败尝试后，继续在这里
-                  </h3>
-                </a>
-              </div>
-            
+            <!-- 分享开始 -->
+            <svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
+            <div id="social">
+                <ul>
+                    <li>
+                        <a id="qzoneShare" href="javascript:void(0)" target="_blank"><i class="fa fa-tencent-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="weiboShare" href="javascript:void(0)" title="weibo" target="_blank"><i
+              class="fa fa-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="qqShare" href="javascript:void(0)" target="_blank"><i class="fa fa-qq fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 分享结束 -->
+            <!-- 文章结束 -->
 
-            
-
-          </div>
-
+            <!-- 上下一篇文章开始 -->
+            <!-- 如果有图片展示文章封面，如果没有图片展示默认图片 -->
+            <div class="navpost-part">
+                <div id="NextPrevPosts" style="display: block;">
+                    
+                        <div class="prev aos-init aos-animate" data-aos="slide-right" data-aos-delay="1.5s">
+                            <div class="arrow"><i class="fa fa-angle-double-left"></i>
+                            </div>
+                            <div class="preview">
+                                
+                                        <div class="pull-left featuredImg" style="background-image:url(https://alainlondon.site/media/images/no-image.png);"></div>
+                                        
+                                            <a class="pull-left preview-content bold" href="https://alainlondon.site/post/2020-08-13-卡地亚的广告央视批林夕/"><span>卡地亚的广告、央视批林夕</span></a>
+                            </div>
+                        </div>
+                        
+                            
+                                <div class="next aos-init aos-animate" data-aos="slide-left" data-aos-delay="1.5s">
+                                    <div class="arrow"><i class="fa fa-angle-double-right"></i></div>
+                                    <div class="preview">
+                                        
+                                                <div class="pull-left featuredImg" style="background-image:url(https://alainlondon.site/media/images/no-image.png);"></div>
+                                                
+                                                    <a class="pull-right preview-content bold" href="https://alainlondon.site/post/2020-08-07-失败尝试后继续在这里/"><span>
+                失败尝试后，继续在这里</span></a>
+                                    </div>
+                                </div>
+                </div>
+                
+            </div>
+            <!-- 上下一篇文章结束 -->
+            <!-- 评论区开始 -->
+            <div id="panel" style="display: block;">
+    <div class="comment-area">
+      <section class="comments">
+        <div class="comments-main">
+          
         </div>
-      </div>
+      </section>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+  </div>
+                <!-- 评论区结束 -->
+        </div>
+        
+<div id="backToTop" style="display: block;">
+    <img src="https://moguos.oss-cn-shenzhen.aliyuncs.com/boxmoe/assets/images/top/lolisister1.gif">
+</div>
 
 
+  
 
 
+<script type='text/javascript' src='https://alainlondon.site/media/js/particles.js'></script>
 
 
-  </body>
+<footer id="footer" class="overlay animated from-top">
+    <div class="decor-wrapper">
+        <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+            <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+        </svg>
+    </div>
+    <div class="socialize" data-aos="zoom-in">
+        
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="cr">
+        Copyright&copy;
+         |
+        <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
+    </div>
+</footer>
+            <script>
+    /* 分享代码 */
+    var feature = "";
+    if(feature == ""){
+      feature = "https://alainlondon.site/favicon.ico";
+    }
+      $("#weiboShare").click(function(){
+        var url = "http://v.t.sina.com.cn/share/share.php?title=" + document.title + "&url=" + document.url + "&pic=" + feature;
+        window.open(url);
+      })
+      $("#qqShare").click(function () {
+        var url = "http://connect.qq.com/widget/shareqq/index.html?url="+ document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+        window.open(url);
+        })
+        $("#qzoneShare").click(function () {
+          var url = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+          window.open(url);
+      })
+  </script>
+
+                <!-- 测试代码开始 -->
+
+                <!-- 测试代码结束 -->
+</body>
+
 </html>

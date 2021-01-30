@@ -1,139 +1,340 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>新的故事 | Alain的博客</title>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content=" " />
+<meta name="keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    新的故事 | Alain的博客
+</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612007751192">
+
+    <!-- 没开启静态资源加速 -->
+<link rel="shortcut icon" href="https://alainlondon.site/favicon.ico?v=1612014196735">
 <link rel="stylesheet" href="https://alainlondon.site/styles/main.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/prism.css">
+<link rel="stylesheet" href="https://alainlondon.site/media/css/font-awesome.min.css">
+<script type='text/javascript' src='https://alainlondon.site/media/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/plugins.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/script.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/aos.js'></script>
+<script type='text/javascript' src='https://alainlondon.site/media/js/prism.js'></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.css">
+<script type="text/javascript" src="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.js"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="现在是2月17日的凌晨，我们开始继续写这一篇文章。首先我很伤心，也很愤怒，因为在中国中央电视台[cctv]电影频道播放的一部电影《伯德小姐》中的画面被删减掉了一部分，就是因为这部分涉及到同性恋的相关内容。我一眼就能够看得出来，画面被强行删除..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://alainlondon.site">
-        <img src="https://alainlondon.site/images/avatar.png?v=1612007751192" class="site-logo">
-        <h1 class="site-title">Alain的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+        
+                <!-- 没开启静态资源加速 -->
+                <script>
+                    $(document).ready(function() {
+                        /**
+                         * 给文章的图片添加放大效果
+                         */
+                        var link;
+                        $(".post_content img").each(function() {
+                            link = $(this).attr("src");
+                            $(this).wrap("<a href=\"" + link + "\"rel =\"gallery\"></a>")
+                        })
+                    })
+                </script>
+                
+</head>
+
+<body class="home blog custom-background round-avatars">
+    <!-- <body class="home blog custom-background round-avatars" itemscope="" itemtype="http://schema.org/Organization" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"></body> -->
+    
+    <div class="Yarn_Background" style="background-image: url(https://wx1.sinaimg.cn/small/006o4ePwly1gn61u4ors2j30u00gv75o.jpg);"></div>
+     
+    <!-- 搜索开始 -->
+
+<div class="js-search search-form search-form--modal">
+    <div class="search-form__inner">
+        <div>
+            <div id="search-container" class="ajax_search">
+                <form method="get" id="gridea-search-form" action="https://alainlondon.site/search/">
+                    <div class="filter_container">
+                        <input type="text" value="" autocomplete="off" placeholder="请输入要搜索的内容" name="q" id="search-input" />
+                        <ul id="search_filtered" class="search_filtered"></ul>
+                    </div>
+                    <!-- <input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" /> -->
+                </form>
+            </div>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-        欢迎
-【国内网络访问本博客可能较慢】
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
 </div>
+<!-- 搜索结束 -->
+<div class="navi" data-aos="fade-down">
+    <div class="bt-nav">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <div class="navbar animated fadeInRight">
+        <div class="inner">
+            <nav id="site-navigation" class="main-navigation">
+                <div id="main-menu" class="main-menu-container">
+                    <div class="menu-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/">
+                                                首页
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/archives">
+                                                归档
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/tags">
+                                                标签
+                                            </a>
+                                        </li>
+                                        
+                                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- #site-navigation -->
+        </div>
+    </div>
+</div>
+<div class="hebin" data-aos="fade-down">
+    <i class=" js-toggle-search fa fa-search"></i>
+</div>
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+    <div class="site-branding text-center">
+        <a href="">
+            <figure>
+                
+                    <img class="custom-logo avatar" src="https://alainlondon.site/images/avatar.png?v=1612014196735" />
+                    
+            </figure>
+        </a>
+        <h3 class="blog-description"><p>  欢迎
+【国内网络访问本博客可能较慢】</p></h3>
+    </div>
+    <!-- .site-branding -->
+    <div class="decor-part">
+        <div id="particles-js"></div>
+    </div>
+    <div class="animation-header">
+        <div class="decor-wrapper">
+            <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+                <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+            </svg>
+        </div>
+    </div>
+</header>
 
+        <!-- 图片放大开始 -->
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">新的故事</h2>
-            <div class="post-date">2020-02-16</div>
-            
-            <div class="post-content" v-pre>
-              <p>现在是2月17日的凌晨，我们开始继续写这一篇文章。首先我很伤心，也很愤怒，因为在中国中央电视台[cctv]电影频道播放的一部电影《伯德小姐》中的画面被删减掉了一部分，就是因为这部分涉及到同性恋的相关内容。我一眼就能够看得出来，画面被强行删除掉了一小节，这是看似不重要但是实则关乎相关群体权利的一小节。这确实令我感到很愤怒，中央电视台真是全面贯彻落实了中国网络视听节目协会的歧视同性恋群体的相关《通则》文件，一些人、一些部门漠视无视了少数群体应该有的权利，把少数群体不当人。尽管这是星期六发生的事情，但是我现在一想起就还是忍不住要生气愤怒，我要最严厉最严厉的谴责中国广电部门及其下属的协会不作为、乱作为。同性恋等性少数群体在中国何时能够迎接来属于自己的春天？相关部门需要给我们一个说法，他们不应该再对此避而不谈！</p>
+        <!-- 图片放大结束 -->
+        <div id="main" class="content">
+            <!-- 测试开始 -->
+
+            <!-- 测试结束 -->
+            <!-- 文章开始 -->
+            <div class="container">
+                <article class="js-gallery post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                    <style>
+                        .container {
+                            padding: 10px 0px;
+                        }
+                        
+                        .post {
+                            margin: 0 auto
+                        }
+                    </style>
+
+                    <section class="post_content">
+                        <header class="post_header">
+                            <h1 class="post_title yellow-under">
+                                新的故事
+                            </h1>
+                        </header>
+                        <div class="post-body js-gallery">
+                            <p>现在是2月17日的凌晨，我们开始继续写这一篇文章。首先我很伤心，也很愤怒，因为在中国中央电视台[cctv]电影频道播放的一部电影《伯德小姐》中的画面被删减掉了一部分，就是因为这部分涉及到同性恋的相关内容。我一眼就能够看得出来，画面被强行删除掉了一小节，这是看似不重要但是实则关乎相关群体权利的一小节。这确实令我感到很愤怒，中央电视台真是全面贯彻落实了中国网络视听节目协会的歧视同性恋群体的相关《通则》文件，一些人、一些部门漠视无视了少数群体应该有的权利，把少数群体不当人。尽管这是星期六发生的事情，但是我现在一想起就还是忍不住要生气愤怒，我要最严厉最严厉的谴责中国广电部门及其下属的协会不作为、乱作为。同性恋等性少数群体在中国何时能够迎接来属于自己的春天？相关部门需要给我们一个说法，他们不应该再对此避而不谈！</p>
 <p>外国人尤其是西方欧美国家的人看待中国、看待中国人就很容易将其妖魔化，他们充斥着西方乃至外部世界对中国长期以来的偏见。今天看了中央电视台的《一堂好课》和《对话》节目，我也非常赞同节目中人物的观点，我们需要构建属于中国自己的话语权，我们要更好的对外讲述中国的故事，让外国朋友能够真实地了解中国、减少他们对中国的偏见与误解。当然，这样不是短期就能够做好的，它需要很多的时间，需要每一个中国人的努力与坚持。如果我们未来能够去到别的国家，那我们一定要展示和维护好自己国家的形象。</p>
 <p>这几天我看了一部动画片《豆小鸭》，觉得还是很不错、很欢乐、很有趣的。我尤其喜欢里面的小猪朋友“金宝”，它又可爱又很好看，让人很喜欢和它在一起相处。像《豆小鸭》、《海绵宝宝》这类看起来觉得故事剧情有时很无厘头、里面人物快快乐乐、疯疯傻傻的动画片，它总能给人一种温暖，它们挣脱了传统框架的束缚，我相信，里面如果有人说出他[她]自己是同性恋的话，那他[她]的好朋友们也会包容友善的对待他[她]，大家一定会继续在一起玩，没有人会被抛弃，更没有人会被歧视。</p>
 <p>希望肺炎疫情早一点得到有效的控制，早些画上句号。</p>
 <p>新的故事，新的开始，希望世界更加友善与包容。</p>
 
+
+                        </div>
+                        <!-- Tips开始 -->
+                        
+                                <!-- Tips结束 -->
+                                <!-- 文章底部信息开始 -->
+                                <div class="meta split split--responsive cf">
+                                    <div class="split__title">
+                                        <time>2020-02-16</time>
+                                        
+                                                    
+                                    </div>
+                                    <div id="social-share"><span class="entypo-share"><i class="fa fa-share-square-o"></i>分享</span></div>
+                                    <div class="slide">
+                                        <a class="btn-slide" title="switch down"><i class="fa fa-chevron-down"></i>折叠评论区</a>
+                                    </div>
+                                </div>
+                                <!-- 文章底部信息结束 -->
+                    </section>
+                </article>
             </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://alainlondon.site/post/2020-02-12-失望的等待/">
-                  <h3 class="post-title">
-                    失望的等待
-                  </h3>
-                </a>
-              </div>
-            
+            <!-- 分享开始 -->
+            <svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
+            <div id="social">
+                <ul>
+                    <li>
+                        <a id="qzoneShare" href="javascript:void(0)" target="_blank"><i class="fa fa-tencent-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="weiboShare" href="javascript:void(0)" title="weibo" target="_blank"><i
+              class="fa fa-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="qqShare" href="javascript:void(0)" target="_blank"><i class="fa fa-qq fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 分享结束 -->
+            <!-- 文章结束 -->
 
-            
-
-          </div>
-
+            <!-- 上下一篇文章开始 -->
+            <!-- 如果有图片展示文章封面，如果没有图片展示默认图片 -->
+            <div class="navpost-part">
+                <div id="NextPrevPosts" style="display: block;">
+                    
+                        <div class="prev aos-init aos-animate" data-aos="slide-right" data-aos-delay="1.5s">
+                            <div class="arrow"><i class="fa fa-angle-double-left"></i>
+                            </div>
+                            <div class="preview">
+                                
+                                        <div class="pull-left featuredImg" style="background-image:url(https://alainlondon.site/media/images/no-image.png);"></div>
+                                        
+                                            <a class="pull-left preview-content bold" href="https://alainlondon.site/post/2020-02-27-春天带来好转，也并存着失望与落寞/"><span>春天带来好转，也并存着失望与落寞</span></a>
+                            </div>
+                        </div>
+                        
+                            
+                                <div class="next aos-init aos-animate" data-aos="slide-left" data-aos-delay="1.5s">
+                                    <div class="arrow"><i class="fa fa-angle-double-right"></i></div>
+                                    <div class="preview">
+                                        
+                                                <div class="pull-left featuredImg" style="background-image:url(https://alainlondon.site/media/images/no-image.png);"></div>
+                                                
+                                                    <a class="pull-right preview-content bold" href="https://alainlondon.site/post/2020-02-12-失望的等待/"><span>
+                失望的等待</span></a>
+                                    </div>
+                                </div>
+                </div>
+                
+            </div>
+            <!-- 上下一篇文章结束 -->
+            <!-- 评论区开始 -->
+            <div id="panel" style="display: block;">
+    <div class="comment-area">
+      <section class="comments">
+        <div class="comments-main">
+          
         </div>
-      </div>
+      </section>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+  </div>
+                <!-- 评论区结束 -->
+        </div>
+        
+<div id="backToTop" style="display: block;">
+    <img src="https://moguos.oss-cn-shenzhen.aliyuncs.com/boxmoe/assets/images/top/lolisister1.gif">
+</div>
 
 
+  
 
 
+<script type='text/javascript' src='https://alainlondon.site/media/js/particles.js'></script>
 
 
-  </body>
+<footer id="footer" class="overlay animated from-top">
+    <div class="decor-wrapper">
+        <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+            <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+        </svg>
+    </div>
+    <div class="socialize" data-aos="zoom-in">
+        
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="cr">
+        Copyright&copy;
+         |
+        <a class="rss" href="https://alainlondon.site/atom.xml" target="_blank">RSS</a>
+    </div>
+</footer>
+            <script>
+    /* 分享代码 */
+    var feature = "";
+    if(feature == ""){
+      feature = "https://alainlondon.site/favicon.ico";
+    }
+      $("#weiboShare").click(function(){
+        var url = "http://v.t.sina.com.cn/share/share.php?title=" + document.title + "&url=" + document.url + "&pic=" + feature;
+        window.open(url);
+      })
+      $("#qqShare").click(function () {
+        var url = "http://connect.qq.com/widget/shareqq/index.html?url="+ document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+        window.open(url);
+        })
+        $("#qzoneShare").click(function () {
+          var url = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+          window.open(url);
+      })
+  </script>
+
+                <!-- 测试代码开始 -->
+
+                <!-- 测试代码结束 -->
+</body>
+
 </html>
